@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E3F2FD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Student Enrollment Portal"
+            android:textSize="26sp"
+            android:textColor="#0D47A1"
+            android:textStyle="bold"
+            android:layout_marginBottom="24dp"
+            android:gravity="center"/>
+
+        <!-- Username Input -->
+        <EditText
+            android:id="@+id/usernameInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username (8-12 chars)"
+            android:inputType="textPersonName"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Password Input -->
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:padding="15dp"
+            android:background="#FFFFFF"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Action Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/registerButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:backgroundTint="#2196F3"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:backgroundTint="#2196F3"/>
+        </LinearLayout>
+
+        <!-- Subject Selection -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Choose Your Subject"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"
+            android:textColor="#0D47A1"/>
+
+        <Spinner
+            android:id="@+id/subjectSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="#FFFFFF"/>
+
+        <!-- Enroll and Summary Buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="16dp">
+
+            <Button
+                android:id="@+id/enrollButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enroll"
+                android:backgroundTint="#2196F3"
+                android:layout_marginBottom="8dp"/>
+
+            <Button
+                android:id="@+id/summaryButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="View Summary"
+                android:backgroundTint="#2196F3"/>
+        </LinearLayout>
+
+        <!-- Result Text View -->
+        <TextView
+            android:id="@+id/resultView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Results will show here"
+            android:textSize="16sp"
+            android:padding="8dp"
+            android:layout_marginTop="16dp"
+            android:textColor="#000000" />
+    </LinearLayout>
+</ScrollView>
